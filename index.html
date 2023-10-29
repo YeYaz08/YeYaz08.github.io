@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <body id="backgroundBody">
-        
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-widht, inital-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-widht, inital-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>OTOMAMA</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body> 
-    <div id="BeslemeBody">
-    <h1>Besleme Zamanı</h1>
-    <form id="clock-form">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body id="backgroundBody">
+    <header class="header">
+        <label>OTOMAMA</label> 
+     </header>
+
+      <h1>Besleme Zamanı</h1>
+      <form id="clock-form">
         <label for="hour1">Sabah Besleme Saati:</label>
-        <input type="time" id="startTime" />
-        <br/>
-        <br/>
+        <input type="time" id="besleme1" />
+        <br />
+        <br />
         <label for="hour2">Öğlen Besleme Saati:</label>
-        <input type="time" id="startTime" />
-        <br/>
-        <br/>
+        <input type="time" id="besleme2" />
+        <br />
+        <br />
         <label for="hour3">Akşam Besleme Saati:</label>
-        <input type="time" id="startTime" />
-    </form>
-    <input type="range" id="clock-slider" min="0" max="100" value="50">
-    <p id="slider-value">50</p>
-    <button id="feed-button">Besleme</button>
-    <br>
-    <h1>İletişim</h1>
-    <a href="https://www.instagram.com/yunisemre.yaz08/" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
-    </div>
+        <input type="time" id="besleme3" />
+      </form>
+      <input type="range" id="clock-slider" min="0" max="100" value="50" />
+      <p id="slider-value">50</p>
+      <button id="feed-button">Besleme</button>
+      <br />
+      <h1>İletişim</h1>
+      <a
+        href="https://www.instagram.com/yunisemre.yaz08/"
+        class="fa fa-instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      ></a>
+    
     <script>
-        var slider = document.getElementById('clock-slider');
-        var sliderValue = document.getElementById('slider-value');
+      var slider = document.getElementById("clock-slider");
+      var sliderValue = document.getElementById("slider-value");
 
-        slider.addEventListener('input', function () {
-            sliderValue.textContent = slider.value;
-        });
+      slider.addEventListener("input", function () {
+        sliderValue.textContent = slider.value;
+      });
 
-        var feedButton = document.getElementById('feed-button');
-        feedButton.addEventListener('click', function () {
-            // Saat ve dakika girişlerini alın
-            var hour1 = document.getElementById('hour1').value;
-            var minute1 = document.getElementById('minute1').value;
-            var hour2 = document.getElementById('hour2').value;
-            var minute2 = document.getElementById('minute2').value;
-            var hour3 = document.getElementById('hour3').value;
-            var minute3 = document.getElementById('minute3').value;
+      var feedButton = document.getElementById("feed-button");
+      feedButton.addEventListener("click", function () {
+        // Saat ve dakika girişlerini alın
+        var hour1 = document.getElementById("hour1").value;
+        var minute1 = document.getElementById("minute1").value;
+        var hour2 = document.getElementById("hour2").value;
+        var minute2 = document.getElementById("minute2").value;
+        var hour3 = document.getElementById("hour3").value;
+        var minute3 = document.getElementById("minute3").value;
 
-            // Slider değerini alın
-            var sliderValue = slider.value;
+        // Slider değerini alın
+        var sliderValue = slider.value;
 
-            // Verileri işleyin veya gönderin
-            console.log("Saat 1: " + hour1 + ":" + minute1);
-            console.log("Saat 2: " + hour2 + ":" + minute2);
-            console.log("Saat 3: " + hour3 + ":" + minute3);
-            console.log("Slider Değeri: " + sliderValue);
+        // Verileri işleyin veya gönderin
+        console.log("Saat 1: " + hour1 + ":" + minute1);
+        console.log("Saat 2: " + hour2 + ":" + minute2);
+        console.log("Saat 3: " + hour3 + ":" + minute3);
+        console.log("Slider Değeri: " + sliderValue);
 
-            // Burada verilerin işlenmesi veya gönderilmesi için kodunuzu ekleyebilirsiniz.
-        });
-    </script>  
-    </body>
-</body>
-
+        // Burada verilerin işlenmesi veya gönderilmesi için kodunuzu ekleyebilirsiniz.
+      });
+    </script>
+  </body>
 </html>
