@@ -19,6 +19,7 @@ html{
 .Sabah{
 background-color: rgb(50, 7, 66);
 border-radius: 10%;
+
 }
 
 .beslemeblogu{
@@ -29,6 +30,7 @@ border-radius: 10%;
     transform: translate(-50%, -50%);
     color: rgb(206, 185, 175);
     font-size: 1rem;
+    width: 80%;
 }
 .backgroundBody{
 background-repeat: no-repeat;
