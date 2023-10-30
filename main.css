@@ -62,11 +62,12 @@ border-radius: 10%;
 
 }
 #feed-button{
-background-color: #3026b9;
+background-color: darkorchid;
 border-radius: 20%;
-font-size: 100%;
-padding-right: 10%;
-padding-left: 10%;
+font-size: 60%;
+
+padding: 10% 12% 10% 12%;
+color: rgb(167, 189, 137);
 }
 
 #slider-value{
