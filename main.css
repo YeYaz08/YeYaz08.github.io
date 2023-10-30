@@ -70,6 +70,11 @@ padding: 10% 12% 10% 12%;
 color: rgb(167, 189, 137);
 }
 
+#feed-button:active{
+    opacity: 0.8;
+
+}
+
 #slider-value{
     font-size: 150%;
 }
