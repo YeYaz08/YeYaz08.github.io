@@ -46,19 +46,27 @@ background-color: #120e07;
 font-size: 1.5rem;
 
 }
-.iletisim{
+.beslemeblogu .iletisim{
     font-size: 0,7rem;
     text-align: center ;
     position: absolute;
-    bottom: 0%;
+  
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(239, 9, 9);
 
 }
+.beslemeblogu .buton{
+background-color: #120e07;
+border-radius: 10%;
 
+}
 #feed-button{
-font-size: 200%
+background-color: #3026b9;
+border-radius: 20%;
+font-size: 100%;
+padding-right: 10%;
+padding-left: 10%;
 }
 
 #slider-value{
@@ -100,6 +108,8 @@ font-size: 200%
 
 #slider{
 background-color: black;
+margin: 5%;
+width: 85%;
 
 }
 
